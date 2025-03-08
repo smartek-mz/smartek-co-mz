@@ -14,18 +14,21 @@ const LangSwitch = () => {
   const { search } = useLocation();
   const navigate = useNavigate();
   
-  const [currentLang, setCurrentLang] = useState<'pt' | 'en'>(() => {
+  const getInitialLang = () => {
     const savedLang = localStorage.getItem('lang');
-    const defaultLang = i18n.language === 'pt' || i18n.language === 'en' ? i18n.language : 'pt';
-    return (savedLang === 'pt' || savedLang === 'en' ? savedLang : defaultLang) as 'pt' | 'en';
-  });
-  
+    if (savedLang === 'pt' || savedLang === 'en') return savedLang;
+    return i18n.language === 'pt' || i18n.language === 'en' ? i18n.language : 'pt';
+  };
+
+  const [currentLang, setCurrentLang] = useState<'pt' | 'en'>(getInitialLang);
+
   useEffect(() => {
     const urlParams = new URLSearchParams(search);
     const langParam = urlParams.get('lang');
     if (langParam === 'pt' || langParam === 'en') {
       setCurrentLang(langParam);
       i18n.changeLanguage(langParam);
+      localStorage.setItem('lang', langParam);
     }
   }, [search]);
 
@@ -33,27 +36,20 @@ const LangSwitch = () => {
     const newLang = currentLang === 'pt' ? 'en' : 'pt';
     setCurrentLang(newLang);
     i18n.changeLanguage(newLang);
+    localStorage.setItem('lang', newLang);
 
     const urlParams = new URLSearchParams(search);
     urlParams.set('lang', newLang);
     navigate(`?${urlParams.toString()}`, { replace: true });
-
-    localStorage.setItem('lang', newLang);
   };
 
   return (
-    <div className="flex items-center justify-center">
-      <button
-        className="flex items-center justify-center px-4 py-2 text-lg transition-colors duration-200 rounded-md focus:outline-none hover:bg-gray-200 dark:hover:bg-gray-700"
-        onClick={toggleLang}
-      >
-        {currentLang === 'pt' ? <MozambiqueFlag /> : <USAFlag />}
-        <span className="ml-2 text-sm font-semibold dark:text-gray-300">
-          {currentLang.toUpperCase()}
-        </span>
+    <div className="lang-switch">
+      <button className="lang-button" onClick={toggleLang}>
+        <div className="lang-icon">{currentLang === 'pt' ? <MozambiqueFlag /> : <USAFlag />}</div>
       </button>
     </div>
-  );
+  );  
 };
 
 export default LangSwitch;

@@ -1,8 +1,13 @@
 {
-    "home": "Smartek - Início",
     "about": "Sobre Nós",
     "services": "Serviços",
     "contact": "Contato",
     "notFound": "Página Não Encontrada",
-    "memberDetails": "Detalhes do Membro"
+    "memberDetails": "Detalhes do Membro",
+    "home": "SMARTEK",
+    "subtitle": "Algo incrível será construído aqui ...",
+    "imageAlt": "Construção do site",
+    "segitText": "Você já conhece o ",
+    "segitDescription": "Um sistema de gestão escolar poderoso?",
+    "learnMore": "Saiba mais"
 }

@@ -1,8 +1,13 @@
 {
-    "home": "Smartek - Home",
+    "home": "SMARTEK",
     "about": "About Us",
     "services": "Services",
     "contact": "Contact",
     "notFound": "Page Not Found",
-    "memberDetails": "Member Details"
+    "memberDetails": "Member Details",
+    "subtitle": "Something amazing will be built here...",
+    "imageAlt": "Website under construction",
+    "segitText": "Have you heard about ",
+    "segitDescription": "A powerful school management system?",
+    "learnMore": "Learn more"
 }

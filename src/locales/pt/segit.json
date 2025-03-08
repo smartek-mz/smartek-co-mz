@@ -1,0 +1,122 @@
+{
+    "header" : {
+        "features": "Recursos",
+        "benefits": "Benefícios",
+        "testimonials": "Depoimentos",
+        "contact-us": "Fale Consco"
+    },
+    "hero": {
+    "title": "SEGIT",
+    "desc": "Sistema de Gestão Escolar completo para otimizar processos acadêmicos e administrativos da sua instituição de ensino.",
+    "request-demo": "Solicitar Demonstração"
+  },
+    "features": {
+      "title": "Recursos",
+      "description": "O SEGIT oferece uma ampla gama de funcionalidades para atender todas as necessidades da sua instituição de ensino.",
+      "enrollment": {
+        "title": "Matrículas e Mensalidades",
+        "description": "Automatize todo o processo de matrícula, desde a inscrição até a confirmação."
+      },
+      "grades": {
+        "title": "Controle de Notas",
+        "description": "Sistema completo para lançamento e cálculo de notas dos alunos."
+      },
+      "classes": {
+        "title": "Gestão de Turmas, Cursos e Disciplinas",
+        "description": "Criação, atualização e alocação de professores e supervisores."
+      },
+      "finance": {
+        "title": "Gestão Financeira",
+        "description": "Controle de mensalidades, emissão de recibos e relatórios financeiros."
+      },
+      "mobile": {
+        "title": "Multiplataforma",
+        "description": "Acesso a informações importantes pelo celular, computador ou tablet para alunos, pais e professores em qualquer lugar a qualquer hora."
+      },
+      "adaptability": {
+        "title": "Adaptabilidade",
+        "description": "O sistema se adapta ao funcionamento da instituição, seja escola ou instituto."
+      }
+    },
+    "benefits": {
+    "imageAlt": "Dashboard do SEGIT",
+    "title": "Por que escolher o SEGIT?",
+    "productivity": {
+      "title": "Aumento de Produtividade",
+      "description": "Automatize tarefas administrativas e reduza o tempo gasto em processos manuais."
+    },
+    "costReduction": {
+      "title": "Redução de Custos",
+      "description": "Diminua gastos com papel, armazenamento físico e horas de trabalho administrativo."
+    },
+    "gradeVisualization": {
+      "title": "Visualização de Notas Eficiente",
+      "description": "Melhore a visualização de notas dos alunos."
+    },
+    "multiPlatform": {
+      "title": "Acesso Multiplataforma",
+      "description": "Acesse o sistema de qualquer dispositivo: computador, tablet ou smartphone."
+    }
+  },
+  "testimonials": {
+    "title": "O que nossos clientes dizem",
+    "description": "Conheça a experiência de instituições que já utilizam o SEGIT em seu dia a dia.",
+    "maria": {
+      "text": "O SEGIT transformou completamente nossa gestão acadêmica. Processos que levavam dias agora são concluídos em minutos, e a satisfação de alunos e pais aumentou significativamente.",
+      "name": "Maria Silva",
+      "role": "Diretora - Colégio Universo"
+    },
+    "joao": {
+      "text": "A implementação do SEGIT foi rápida e o suporte técnico é excelente. Nossa equipe administrativa está muito mais produtiva e conseguimos focar no que realmente importa: a educação.",
+      "name": "João Santos",
+      "role": "Coordenador - Instituto Politécnico Polivalente"
+    },
+    "ana": {
+      "text": "Como professor, o SEGIT facilitou muito meu trabalho com lançamento de notas e comunicação com os alunos. A interface é intuitiva e posso acessar de qualquer lugar.",
+      "name": "Ana Oliveira",
+      "role": "Professora - Colégio São-José"
+    }
+  },
+  "cta": {
+    "title": "Pronto para transformar sua instituição?",
+    "description": "Entre em contato conosco hoje mesmo e agende uma demonstração gratuita do SEGIT para sua escola ou instituto.",
+    "form": {
+      "nameLabel": "Nome Completo",
+      "namePlaceholder": "Digite seu nome completo",
+      "emailLabel": "Email",
+      "emailPlaceholder": "Digite seu email",
+      "phoneLabel": "Telefone",
+      "phonePlaceholder": "(+258)000000000",
+      "submit": "Solicitar Demonstração",
+      "whatsapp": "Fale conosco pelo WhatsApp"
+    }
+  },
+  "footer": {
+    "links": {
+      "start": "Início",
+      "features": "Recursos",
+      "benefits": "Benefícios",
+      "testimonials": "Depoimentos"
+    },
+    "resources": {
+      "title": "Recursos",
+      "enrollment": "Gestão de Matrículas",
+      "grades": "Controle de Notas",
+      "calendar": "Calendário Acadêmico",
+      "finance": "Gestão Financeira"
+    },
+    "support": {
+      "title": "Suporte",
+      "helpCenter": "Central de Ajuda",
+      "tutorials": "Tutoriais",
+      "faq": "FAQ",
+      "contact": "Contato"
+    },
+    "contact": {
+      "title": "Contato",
+      "address": "Avenida do Trabalho, Bairro Urbano Central, Nampula"
+    },
+    "copyright": "Sistema de Gestão Escolar. Todos os direitos reservados."
+  }
+  }
+  

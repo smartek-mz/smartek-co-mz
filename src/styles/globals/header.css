@@ -1,0 +1,464 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  color: #333;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: #333;
+}
+
+.logo img {
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+  transform: scale(1.035);
+}
+
+.logoText {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateY(-5px);
+  color: #007bff;
+}
+
+.logoText:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .logoText {
+    font-size: 1.5rem;
+  }
+} 
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-left: auto;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: rgb(74, 144, 226);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s ease;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background: rgb(74, 144, 226);
+  color: #fff;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+}
+
+.btn {
+  background: rgb(74, 144, 226);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: rgb(52, 118, 202);
+}
+
+.cta-button {
+  background: rgb(74, 144, 226);
+  padding: 12px 24px;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  margin-left: 20px;
+}
+
+.cta-button:hover {
+  background: rgb(52, 118, 202);
+}
+
+.config-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin-left: 20px;
+}
+
+.config-button:hover {
+  transform: rotate(90deg);
+  color: rgb(74, 144, 226);
+}
+
+.mobile-menu-button {
+  background: none;
+  border: none;
+  color: #333;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #fff;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.mobile-menu-item {
+  padding: 12px 20px;
+  color: #333;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.mobile-menu-item:hover {
+  background: rgb(74, 144, 226);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .nav-links, .buttons, .cta-button, .config-button {
+    display: none;
+  }
+
+  .header-container {
+    justify-content: space-between;
+  }
+  
+  .mobile-menu-button {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #333;
+    cursor: pointer;
+    z-index: 1000;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .mobile-menu-button:hover {
+    color: rgb(74, 144, 226);
+    transform: scale(1.01);
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+  }
+
+  .mobile-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu-item {
+    padding: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.3s ease;
+    width: 100%;
+  }
+
+  .mobile-menu-item:hover {
+    background: rgb(74, 144, 226);
+    color: #fff;
+  }
+
+  .mobile-config-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background: rgb(74, 144, 226);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .mobile-config-button:hover {
+    background: rgb(50, 120, 200);
+  }
+}
+
+.config-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.config-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  transition: opacity 0.3s ease-out;
+}
+
+.config-modal-container {
+  position: relative;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.config-modal-content {
+  background: var(--modal-bg, white);
+  color: var(--text-color, black);
+  border-radius: 12px;
+  padding: 20px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  animation: scale-in 0.3s ease-out;
+  position: relative;
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+.config-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.config-modal-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.close-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 50%;
+  transition: background 0.2s;
+}
+
+.close-button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.config-modal-options {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.config-modal-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.config-option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--option-bg, #f9f9f9);
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+.config-option * {
+  display: flex;
+  align-items: center;
+}
+
+.config-option:hover {
+  background: var(--option-hover, #eaeaea);
+  transform: scale(1.02);
+}
+
+.config-icon {
+  font-size: 20px;
+}
+
+.config-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color, #333);
+}
+
+.config-modal-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+@media (max-width: 480px) {
+  .config-modal-content {
+    width: 95%;
+    max-width: 350px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --modal-bg: #1e1e1e;
+    --option-bg: #252525;
+    --option-hover: #333;
+    --text-color: #fff;
+  }
+  .close-button:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+}
+
+@import './lang-switch.css';
+@import './theme-switch.css';

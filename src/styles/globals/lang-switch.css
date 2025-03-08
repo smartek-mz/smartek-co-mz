@@ -1,0 +1,34 @@
+.lang-switch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lang-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.lang-icon {
+  display: flex;
+  width: 24px;
+  height: 24px;
+}
+
+.lang-text {
+  text-transform: uppercase;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --switch-bg: #252525;
+    --switch-text: #fff;
+    --switch-hover: #333;
+  }
+}

@@ -1,0 +1,121 @@
+{
+    "header": {
+        "features": "Features",
+        "benefits": "Benefits",
+        "testimonials": "Testimonials",
+        "contact-us": "Contact Us"
+    },
+    "hero": {
+        "title": "SEGIT",
+        "desc": "Complete School Management System to optimize academic and administrative processes of your educational institution.",
+        "request-demo": "Request Demo"
+    },
+    "features": {
+        "title": "Features",
+        "description": "SEGIT offers a wide range of functionalities to meet all the needs of your educational institution.",
+        "enrollment": {
+            "title": "Enrollment and Tuition Fees",
+            "description": "Automate the entire enrollment process, from registration to confirmation."
+        },
+        "grades": {
+            "title": "Grade Management",
+            "description": "Complete system for recording and calculating student grades."
+        },
+        "classes": {
+            "title": "Class, Course, and Subject Management",
+            "description": "Creation, updating, and assignment of teachers and supervisors."
+        },
+        "finance": {
+            "title": "Financial Management",
+            "description": "Control of tuition fees, receipt issuance, and financial reports."
+        },
+        "mobile": {
+            "title": "Multiplatform",
+            "description": "Access important information via mobile, computer, or tablet for students, parents, and teachers anywhere, anytime."
+        },
+        "adaptability": {
+            "title": "Adaptability",
+            "description": "The system adapts to the functioning of the institution, whether it is a school or institute."
+        }
+    },
+    "benefits": {
+        "imageAlt": "SEGIT Dashboard",
+        "title": "Why Choose SEGIT?",
+        "productivity": {
+            "title": "Increased Productivity",
+            "description": "Automate administrative tasks and reduce the time spent on manual processes."
+        },
+        "costReduction": {
+            "title": "Cost Reduction",
+            "description": "Reduce spending on paper, physical storage, and administrative work hours."
+        },
+        "gradeVisualization": {
+            "title": "Efficient Grade Visualization",
+            "description": "Improve the visualization of student grades."
+        },
+        "multiPlatform": {
+            "title": "Multiplatform Access",
+            "description": "Access the system from any device: computer, tablet, or smartphone."
+        }
+    },
+    "testimonials": {
+        "title": "What Our Clients Say",
+        "description": "Discover the experience of institutions already using SEGIT in their daily operations.",
+        "maria": {
+            "text": "SEGIT completely transformed our academic management. Processes that used to take days are now completed in minutes, and student and parent satisfaction has increased significantly.",
+            "name": "Maria Silva",
+            "role": "Director - Colégio Universo"
+        },
+        "joao": {
+            "text": "The implementation of SEGIT was quick, and the technical support is excellent. Our administrative team is much more productive, and we can focus on what really matters: education.",
+            "name": "João Santos",
+            "role": "Coordinator - Politécnico Polivalente Institute"
+        },
+        "ana": {
+            "text": "As a teacher, SEGIT has greatly facilitated my work with grade entry and communication with students. The interface is intuitive, and I can access it from anywhere.",
+            "name": "Ana Oliveira",
+            "role": "Teacher - Colégio São-José"
+        }
+    },
+    "cta": {
+        "title": "Ready to Transform Your Institution?",
+        "description": "Contact us today and schedule a free SEGIT demo for your school or institute.",
+        "form": {
+            "nameLabel": "Full Name",
+            "namePlaceholder": "Enter your full name",
+            "emailLabel": "Email",
+            "emailPlaceholder": "Enter your email",
+            "phoneLabel": "Phone",
+            "phonePlaceholder": "(+258)000000000",
+            "submit": "Request Demo",
+            "whatsapp": "Contact us via WhatsApp"
+        }
+    },
+    "footer": {
+        "links": {
+            "start": "Home",
+            "features": "Features",
+            "benefits": "Benefits",
+            "testimonials": "Testimonials"
+        },
+        "resources": {
+            "title": "Resources",
+            "enrollment": "Enrollment Management",
+            "grades": "Grade Management",
+            "calendar": "Academic Calendar",
+            "finance": "Financial Management"
+        },
+        "support": {
+            "title": "Support",
+            "helpCenter": "Help Center",
+            "tutorials": "Tutorials",
+            "faq": "FAQ",
+            "contact": "Contact"
+        },
+        "contact": {
+            "title": "Contact",
+            "address": "Avenida do Trabalho, Bairro Urbano Central, Nampula"
+        },
+        "copyright": "School Management System. All rights reserved."
+    }
+}
