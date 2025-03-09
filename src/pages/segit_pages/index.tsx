@@ -112,7 +112,7 @@ const Home: React.FC = () => {
                 {t("hero.request-demo")}
               </Link>
               <Link to="https://segit.smartek.co.mz" className="btn test-btn">
-                {t("hero.request-demo")}
+                Teste o SEGIT
               </Link>
             </div>
           </div>
