@@ -99,7 +99,7 @@ const Home: React.FC = () => {
         links={navLinks}
         showCTA={true}
         ctaLabel={t("header.contact-us")}
-        ctaPath="https://wa.me/878425198?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
+        ctaPath="https://wa.me/258878425198?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
       />
 
       <section className="hero" id="inicio">
@@ -211,7 +211,7 @@ const Home: React.FC = () => {
             <div className="form-buttons">
               <button type="submit" className="btn">{t("cta.form.submit")}</button>
               <a
-                href="https://wa.me/878425198?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
+                href="https://wa.me/258878425198?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
                 className="btn btn-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
