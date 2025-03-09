@@ -298,7 +298,6 @@ header {
 
 .btn:hover {
     background-color: transparent;
-    color: var(--white);
 }
 
 .btn-outline {
@@ -307,16 +306,17 @@ header {
     border: 2px solid var(--white);
     margin-left: 15px;
 }
+.test-btn{
+    margin-top: 2rem;
+}
 
 .btn-outline:hover {
     background-color: var(--white);
-    color: var(--primary);
 }
 
 .hero-buttons {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
 }
 
 /* Features */

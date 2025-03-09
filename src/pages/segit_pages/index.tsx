@@ -99,7 +99,7 @@ const Home: React.FC = () => {
         links={navLinks}
         showCTA={true}
         ctaLabel={t("header.contact-us")}
-        ctaPath="https://wa.me/844855516?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
+        ctaPath="https://wa.me/878425198?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
       />
 
       <section className="hero" id="inicio">
@@ -108,7 +108,10 @@ const Home: React.FC = () => {
             <h2>{t("hero.title")}</h2>
             <p>{t("hero.desc")}</p>
             <div className="hero-buttons">
-              <Link to="#contato" className="btn btn-outline">
+              <Link to="#contato" className="btn">
+                {t("hero.request-demo")}
+              </Link>
+              <Link to="https://segit.smartek.co.mz" className="btn test-btn">
                 {t("hero.request-demo")}
               </Link>
             </div>
@@ -208,7 +211,7 @@ const Home: React.FC = () => {
             <div className="form-buttons">
               <button type="submit" className="btn">{t("cta.form.submit")}</button>
               <a
-                href="https://wa.me/844855516?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
+                href="https://wa.me/878425198?text=Olá!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT."
                 className="btn btn-whatsapp"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -254,7 +257,7 @@ const Home: React.FC = () => {
             <h4>{t("footer.contact.title")}</h4>
             <ul>
               <li>info@smartek.co.mz</li>
-              <li>(+258) 844855516</li>
+              <li>(+258) 878425198</li>
               <li>{t("footer.contact.address")}</li>
             </ul>
           </div>
