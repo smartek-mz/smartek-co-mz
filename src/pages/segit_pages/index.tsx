@@ -108,7 +108,7 @@ const Home: React.FC = () => {
             <h2>{t("hero.title")}</h2>
             <p>{t("hero.desc")}</p>
             <div className="hero-buttons">
-              <Link to="#contato" className="btn">
+              <Link to="https://wa.me/258878425198?text=Ol%C3%A1!%20Tenho%20interesse%20em%20conhecer%20o%20SEGIT" className="btn">
                 {t("hero.request-demo")}
               </Link>
               <Link to="https://segit.smartek.co.mz" className="btn test-btn">
